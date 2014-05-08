@@ -1,0 +1,21 @@
+This is e-pTeX, Version 3.1415926-p3.3-110825-2.5 (utf8.sjis) (TeX Live 2012/W32TeX) (format=platex 2012.8.4)  17 FEB 2014 17:06
+entering extended mode
+ \write18 enabled.
+ Source specials enabled.
+ %&-line parsing enabled.
+**"pdflatex %O -interaction=nonstopmode -synctex=1 %S"
+! Emergency stop.
+<*> ... %O -interaction=nonstopmode -synctex=1 %S"
+                                                  
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 0 strings out of 494055
+ 9 string characters out of 3159354
+ 52003 words of memory out of 3000000
+ 3531 multiletter control sequences out of 15000+200000
+ 7511 words of font info for 31 fonts, out of 3000000 for 9000
+ 745 hyphenation exceptions out of 8191
+ 0i,0n,0p,1b,6s stack positions out of 5000i,500n,10000p,500000b,50000s
+No pages of output.

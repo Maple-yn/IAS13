@@ -1,0 +1,11 @@
+# Fdb version 3
+["dvipdf"] 0 "=.dvi" "=.pdf" "=" 0
+  "=.dvi" 0 -1 0 "latex"
+  (generated)
+  "=.pdf"
+["latex"] 1392624378 "=" "=.dvi" "=" 1392624379
+  "=" 0 -1 0 ""
+  "=.aux" 1392624291 8 a94a2480d3289e625eea47cd1b285758 ""
+  (generated)
+  "=.log"
+  "=.dvi"

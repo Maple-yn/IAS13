@@ -1,0 +1,47 @@
+This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: splncs.bst.bst
+Database file #1: reference_shirafuji.bib
+You've used 15 entries,
+            2087 wiz_defined-function locations,
+            596 strings with 6117 characters,
+and the built_in function-call counts, 5004 in all, are:
+= -- 519
+> -- 160
+< -- 12
++ -- 59
+- -- 44
+* -- 347
+:= -- 632
+add.period$ -- 23
+call.type$ -- 15
+change.case$ -- 12
+chr.to.int$ -- 0
+cite$ -- 15
+duplicate$ -- 269
+empty$ -- 478
+format.name$ -- 44
+if$ -- 1229
+int.to.chr$ -- 0
+int.to.str$ -- 15
+missing$ -- 18
+newline$ -- 78
+num.names$ -- 15
+pop$ -- 58
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 200
+stack$ -- 0
+substring$ -- 363
+swap$ -- 149
+text.length$ -- 12
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 48
+width$ -- 17
+write$ -- 172
+is.kanji.str$ -- 0

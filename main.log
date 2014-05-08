@@ -1,0 +1,325 @@
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013) (format=platex 2013.9.18)  1 MAR 2014 03:05
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+pLaTeX2e <2006/11/10> (based on LaTeX2e <2011/06/27> patch level 0)
+Babel <3.9f> and hyphenation patterns for 78 languages loaded.
+(./llncs.cls
+Document Class: llncs 2013/09/27 v2.18 
+ LaTeX document class for Lecture Notes in Computer Science
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen118
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+\c@tracingmulticols=\count89
+\mult@box=\box41
+\multicol@leftmargin=\dimen119
+\c@unbalance=\count90
+\c@collectmore=\count91
+\doublecol@number=\count92
+\multicoltolerance=\count93
+\multicolpretolerance=\count94
+\full@width=\dimen120
+\page@free=\dimen121
+\premulticols=\dimen122
+\postmulticols=\dimen123
+\multicolsep=\skip43
+\multicolbaselineskip=\skip44
+\partial@page=\box42
+\last@line=\box43
+\mult@rightbox=\box44
+\mult@grightbox=\box45
+\mult@gfirstbox=\box46
+\mult@firstbox=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\c@columnbadness=\count95
+\c@finalcolumnbadness=\count96
+\last@try=\dimen124
+\multicolovershoot=\dimen125
+\multicolundershoot=\dimen126
+\mult@nat@firstbox=\box65
+\colbreak@box=\box66
+\multicol@sort@counter=\count97
+)
+(./aliascnt.sty
+Package: aliascnt 2009/09/08 v1.3 Alias counter (HO)
+ (./remreset.sty))
+\c@chapter=\count98
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 362.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 363.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 364.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 365.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 366.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 367.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 368.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 369.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 370.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 371.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 372.
+\tocchpnum=\dimen127
+\tocsecnum=\dimen128
+\tocsectotal=\dimen129
+\tocsubsecnum=\dimen130
+\tocsubsectotal=\dimen131
+\tocsubsubsecnum=\dimen132
+\tocsubsubsectotal=\dimen133
+\tocparanum=\dimen134
+\tocparatotal=\dimen135
+\tocsubparanum=\dimen136
+\@tempcntc=\count99
+\fnindent=\dimen137
+\c@@inst=\count100
+\c@@auth=\count101
+\c@auco=\count102
+\instindent=\dimen138
+\authrun=\box67
+\authorrunning=\toks15
+\tocauthor=\toks16
+\titrun=\box68
+\titlerunning=\toks17
+\toctitle=\toks18
+\c@theorem=\count103
+\c@case=\count104
+\c@conjecture=\count105
+\c@corollary=\count106
+\c@definition=\count107
+\c@example=\count108
+\c@exercise=\count109
+\c@lemma=\count110
+\c@note=\count111
+\c@problem=\count112
+\c@property=\count113
+\c@proposition=\count114
+\c@question=\count115
+\c@solution=\count116
+\c@remark=\count117
+\headlineindent=\dimen139
+) (./llncsdoc.sty)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvipdfmx.def on input line 91.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/dvipdfmx-def/dvipdfmx.def
+File: dvipdfmx.def 2013/05/27 v3.2 LaTeX graphics driver for dvipdfmx (TeX Live
+/ChoF)
+))
+\Gin@req@height=\dimen140
+\Gin@req@width=\dimen141
+)
+(/Users/maple/Library/texmf/tex/platex/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip45
+\subfigcapskip=\skip46
+\subfigcaptopadj=\dimen142
+\subfigbottomskip=\skip47
+\subfigcapmargin=\dimen143
+\subfiglabelskip=\skip48
+\c@subfigure=\count118
+\c@lofdepth=\count119
+\c@subtable=\count120
+\c@lotdepth=\count121
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2013/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip49
+\subfig@bottom=\skip50
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks20
+\ex@=\dimen144
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+LaTeX Info: Redefining \boldsymbol on input line 39.
+\pmbraise@=\dimen145
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count122
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count123
+\leftroot@=\count124
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count125
+\DOTSCASE@=\count126
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box69
+\strutbox@=\box70
+\big@size=\dimen146
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+
+
+Package amsmath Warning: Unable to redefine math accent \vec.
+
+\macc@depth=\count127
+\c@MaxMatrixCols=\count128
+\dotsspace@=\muskip10
+\c@parentequation=\count129
+\dspbrk@lvl=\count130
+\tag@help=\toks21
+\row@=\count131
+\column@=\count132
+\maxfields@=\count133
+\andhelp@=\toks22
+\eqnshift@=\dimen147
+\alignsep@=\dimen148
+\tagshift@=\dimen149
+\tagwidth@=\dimen150
+\totwidth@=\dimen151
+\lineht@=\dimen152
+\@envbody=\toks23
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+) (./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 22.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 22.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 162.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 162.
+ [1
+
+]
+File: fig/coupled.eps Graphic file (type eps)
+ <fig/coupled.eps> [2]
+File: fig/slacked.eps Graphic file (type eps)
+ <fig/slacked.eps> [3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+[5] [6]
+File: fig/slack1.eps Graphic file (type eps)
+ <fig/slack1.eps>
+File: fig/slack2.eps Graphic file (type eps)
+ <fig/slack2.eps>
+File: fig/force.eps Graphic file (type eps)
+ <fig/force.eps> [7]
+File: ./figure/JPG/finger1.eps Graphic file (type eps)
+
+<./figure/JPG/finger1.eps> [8]
+File: ./figure/plot/0208_3_0-20.pdf Graphic file (type pdf)
+ <./figure/plot/0208_3_0-20.pdf>
+File: ./figure/plot/threshold_angle.pdf Graphic file (type pdf)
+
+<./figure/plot/threshold_angle.pdf>
+File: ./figure/plot/threshold_force.pdf Graphic file (type pdf)
+ <./figure/plot/threshold_force.pdf>
+[9]
+File: ./pdf/2320t15r60b500shadow.pdf Graphic file (type pdf)
+ <./pdf/2320t15r60b500shadow.pdf>
+File: ./pdf/2425t15r80b450shadow.pdf Graphic file (type pdf)
+ <./pdf/2425t15r80b450shadow.pdf>
+File: ./figure/frame1733r60b180.pdf Graphic file (type pdf)
+
+<./figure/frame1733r60b180.pdf> [10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+(./main.bbl [12]) [13] (./main.aux) ) 
+Here is how much of TeX's memory you used:
+ 1917 strings out of 494004
+ 22889 string characters out of 6154418
+ 101946 words of memory out of 5000000
+ 5345 multiletter control sequences out of 15000+600000
+ 18381 words of font info for 70 fonts, out of 8000000 for 9000
+ 745 hyphenation exceptions out of 8191
+ 28i,20n,24p,311b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on main.dvi (13 pages, 44332 bytes).

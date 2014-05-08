@@ -1,0 +1,4 @@
+PWD C:/Users/meadowsweet/Dropbox/Private/Lab/LaTeX/llncs
+INPUT c:/w32tex/share/texmf/web2c/texmf.cnf
+INPUT c:/w32tex/share/texmf/web2c/eptex/platex.fmt
+OUTPUT texput.log

@@ -1,0 +1,88 @@
+\begin{thebibliography}{10}
+
+\bibitem{salisbury1982}
+Salisbury, J., Craig, J.:
+\newblock Articulated hands: Force control and kinematic issues.
+\newblock The International Journal of Robotics Research \textbf{1}(1) (Mar.
+  1982)  4--17
+
+\bibitem{Jacobsen1986}
+Jacobsen, S., Iversen, E., Knutti, D., Johnson, R., Biggers, K.:
+\newblock Design of the utah/mit dextrous hand.
+\newblock In: Proceedings IEEE International Conference on Robotics and
+  Automation. (Apr. 1986)  1520--1532
+
+\bibitem{Butterfass2001}
+Butterfass, J., Grebenstein, M., Liu, H., Hirzinger, G.:
+\newblock Dlr-hand ii: Next generation of a dextrous robot hand.
+\newblock In: Proceedings IEEE International Conference on Robotics and
+  Automation. (2001)  109--114
+
+\bibitem{vande2004}
+Vande~Weghe, M., Rogers, M., Weissert, M., Matsuoka, Y.:
+\newblock The act hand: design of the skeletal structure.
+\newblock In: Proceedings IEEE International Conference on Robotics and
+  Automation. (Apr. 2004)  3375--3379
+
+\bibitem{Birglen2008}
+Birglen, L., Gosselin, C., Lalibert{\'e}, T.:
+\newblock Underactuated robotic hands. Volume~40.
+\newblock Springer Verlag (2008)
+
+\bibitem{Hirose1978}
+Hirose, S., Umetani, Y.:
+\newblock The development of soft gripper for the versatile robot hand.
+\newblock Mechanism and Machine Theory \textbf{13}(3) (Jan. 1978)  351--359
+
+\bibitem{Kaneko2003}
+Kaneko, M., Higashimori, M., Takenaka, R., Namiki, A., Ishikawa, M.:
+\newblock The 100 g capturing robot-too fast to see.
+\newblock Mechatronics, IEEE/ASME Transactions on \textbf{8}(1) (2003)  37--44
+
+\bibitem{Fukaya2013}
+Fukaya, N., Asfour, T., Dillmann, R., Toyama, S.:
+\newblock {Development of a Five-Finger Dexterous Hand without Feedback
+  control: the TUAT/Karlsruhe Humanoid Hand}.
+\newblock In: Proceedings of the IEEE/RSJ International Conference on
+  Intelligent Robots and Systems. (2013)  4533--4540
+
+\bibitem{Shirafuji2014b}
+Shirafuji, S., Ikemoto, S., Hosoda, K.:
+\newblock Development of a tendon-driven robotic finger for an anthropomorphic
+  robotic hand.
+\newblock The International Journal of Robotics Research (2014) in press.
+
+\bibitem{kobayashi1998}
+Kobayashi, H., Hyodo, K., Ogane, D.:
+\newblock On tendon-driven robotic mechanisms with redundant tendons.
+\newblock The International Journal of Robotics Research \textbf{17}(5) (May
+  1998)  561--571
+
+\bibitem{murrayi1994}
+Murray, R., Li, Z., Sastry, S.S.:
+\newblock A mathematical introduction to robotic manipulation.
+\newblock CRC Press (1994)
+
+\bibitem{tsai1999}
+Tsai, L.:
+\newblock Robot analysis: the mechanics of serial and parallel manipulators.
+\newblock Wiley, New York (1999)
+
+\bibitem{sawada2012}
+Sawada, D., Ozawa, R.:
+\newblock Joint control of tendon-driven mechanisms with branching tendons.
+\newblock In: Proc. IEEE Int. Conf. Robot. Autom. (May 2012)  1501--1507
+
+\bibitem{Leijnse1995}
+Leijnse, J., Kalker, J.:
+\newblock A two-dimensional kinematic model of the lumbrical in the human
+  finger.
+\newblock Journal of Biomechanics \textbf{28}(3) (Mar. 1995)  237--249
+
+\bibitem{Spoor1983}
+Spoor, C.:
+\newblock Balancing a force on the fingertip of a two-dimensional finger model
+  without intrinsic muscles.
+\newblock J. Biomech. \textbf{16}(7) (1983)  497--504
+
+\end{thebibliography}

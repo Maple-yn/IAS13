@@ -1,0 +1,11 @@
+# Fdb version 3
+["dvipdf"] 0 "pdflatex %O -interaction=nonstopmode -synctex=1 %S.dvi" "pdflatex %O -interaction=nonstopmode -synctex=1 %S.pdf" "pdflatex %O -interaction=nonstopmode -synctex=1 %S" 0
+  "pdflatex %O -interaction=nonstopmode -synctex=1 %S.dvi" 0 -1 0 "latex"
+  (generated)
+  "pdflatex %O -interaction=nonstopmode -synctex=1 %S.pdf"
+["latex"] 1392624379 "pdflatex %O -interaction=nonstopmode -synctex=1 %S" "pdflatex %O -interaction=nonstopmode -synctex=1 %S.dvi" "pdflatex %O -interaction=nonstopmode -synctex=1 %S" 1392624379
+  "pdflatex %O -interaction=nonstopmode -synctex=1 %S" 0 -1 0 ""
+  "pdflatex %O -interaction=nonstopmode -synctex=1 %S.aux" 1392624293 8 a94a2480d3289e625eea47cd1b285758 ""
+  (generated)
+  "pdflatex %O -interaction=nonstopmode -synctex=1 %S.log"
+  "pdflatex %O -interaction=nonstopmode -synctex=1 %S.dvi"
