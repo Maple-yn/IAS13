@@ -1178,7 +1178,7 @@ We use these derived relations in this section to develop the robotic finger and
 \section{Development of Robotic Finger} % (fold)
 \label{sec:producing}
 	
-We produced a robotic finger with the non-elastic branching tendon and developed a two-fingered gripper.
+We produced a robotic finger with a non-elastic branching tendon and assembled two developed fingers into a two-fingered gripper.
 Each finger has three links and two joints with five pulleys, and is driven by flexion/extension wires.
 
 %  \section{2関節ロボットフィンガシステム} % (fold)
@@ -1189,9 +1189,9 @@ Each finger has three links and two joints with five pulleys, and is driven by f
 
 % 	  \subsection{各関節のモーメントアームと可動域} % (fold)
 % 	  \label{sub:moment_arm}
-Movement of the joints is determined by the applied torque, and the torque is function of a moment arm of each tendon.
-Therefore, the moment arm is an important factor to design the movement of the joint.
-The finger is driven by branching extensor tendon and flexor tendon, which is a simple model of a human finger.
+Movement of the joints is determined by the applied torque, which is a function of the moment arm of each tendon.
+Therefore, the moment arm is an important factor in designing the joint movement.
+The finger is a simple model of a human finger, driven by branching extensor tendons and flexor tendons.
 % 		\ref{sub:branching_tendon}項で述べたように，フィンガの動きや関節間の連動の比率は，各腱の各関節に対するモーメントアームによって異なる．
 % 		そのため，モーメントアームの決定は，フィンガの動作を決定する重要な事項である．
 % 		開発するフィンガは，指先2関節を屈曲側の腱1本と伸展側の分岐腱1本で駆動する．
@@ -1199,17 +1199,25 @@ The finger is driven by branching extensor tendon and flexor tendon, which is a 
 % 		モーメントアームの設定は，Leijnse et al.\cite{Leijnse1995}，Spoor\cite{Spoor1983}の示したヒトの指におけるモーメントアームを参考にして行った．
 % 		実際に採用した値を，表\ref{tab:pulley}に示す．
 % Table \ref{tab:pulley} shows the actual moment arms for the robotic finger, taking the real parameters into account\cite{Leijnse1995,Spoor1983}.
-The actual moment arms for the rovotic finger are decided as follows: $r_{11}=7$, $r_{12}=4$, $r_{2b1}=3$, $r_{2b2}=4$, $r_{2a}=5$(units are [mm]),
-taking the real parameters into account\cite{Leijnse1995,Spoor1983}.
-Although the moment arm $r_{2b1}$ is a nonlinear function of PIP joint angle according to Leijnse et al. \cite{Leijnse1995}, 
-we set it as a constant value for simplicity.
-The diameter of the pulleys are designed depending on the real moment arms.
+Based on real parameters\cite{Leijnse1995,Spoor1993}, the moment arms for the robotic finger were decided as follows:
+ % The actual moment arms for the rovotic finger are decided as follows: 
+ $r_{11}=7$, $r_{12}=4$, $r_{2b1}=3$, $r_{2b2}=4$, $r_{2a}=5$(units are mm).
+% taking the real parameters into account\cite{Leijnse1995,Spoor1983}.
+Although the moment arm $r_{2b1}$ is a nonlinear function of the PIP joint angle
+% according to Leijnse et al. 
+\cite{Leijnse1995}, we regard it as a constant for simplicity.
+% we set it as a constant value for simplicity.
+The diameter of the pulleys
+was decided from real moment arms, and the link lengths also imitate those of a human finger.
+% are designed depending on the real moment arms.
 % 		ただし，腱1の関節1におけるモーメントアーム$r_{t1}$について，Leijnse et al.によると，このモーメントアームは，ある条件を満たすような，PIP関節の関節角度に関する非線形な関数であらわされる．
 % 		Shirafuji et al.は，この非線形なモーメントアームを複数のプーリを配置することで再現しているが，本研究では，構造の簡潔化のためにこのモーメントアームは定数としている．
 % 		これらのモーメントアームは各関節に腱ごとに配置されたプーリの半径によって実現されている．
 % Link length is also designed to imitated a real human(Table \ref{tab:system}).
-Link length is also designed to imitated a real human.
-The length between joint 1 and joint 2 is 30.5[mm] and the length between joint 2 and fingertip is 22[mm].
+% Link length is also designed to imitated a real human.
+The lengths between joint 1 and joint 2
+and between joint 2 and the fingertip are 30.5 mm and 22 mm, respectively.
+ % is 30.5[mm] and the length between joint 2 and fingertip is 22[mm].
 % 		また，各関節間の距離は，指先の軌道や指先に発生する力に関係する．
 % 		フィンガの各部分の長さを表\ref{tab:system}に示す．
 		
@@ -1333,7 +1341,7 @@ The length between joint 1 and joint 2 is 30.5[mm] and the length between joint 
 % \section{control system} % (fold)
 % \label{sec:control_system}
 
-Fig. \ref{pic:finger} shows exterior of the finger system.
+Fig. \ref{pic:finger} shows the exterior of the finger system.
 % 		フィンガを実際に動作させるため，その制御システムを製作した．
 % 		システムの構成を図\ref{fig:system}に，製作したシステムの外観を図\ref{pic:finger}に示す．
 	% \begin{figure}[tb]
@@ -1345,16 +1353,17 @@ Fig. \ref{pic:finger} shows exterior of the finger system.
 	\begin{figure}[tb]
 		\centering
 		\includegraphics[width=.50\textwidth]{./figure/JPG/finger1.eps}
-		\caption{Photo of the robot hand that has two underactuated fingers with branching tendon}
+		\caption{Photograph of the robot hand composed of two underactuated fingers with a branching tendon}
 		\label{pic:finger}
 	\end{figure}
 Each tendon is driven by a servo motor(Dynamixel MX-64R), and
-rotation angle of a base pulley which winds the tendon is measured by a rotary encoders(OMRON E6A2-CW3C).
-Tendon displacement can be calculated by this angle.
-Pulses from the encoder are counted by a counter IC(NEC $\mu$PD 4702C).
+the rotation angle of the base pulley that winds the tendon is measured by rotary encoders (OMRON E6A2-CW3C).
+This angle is used to calculate the tendon displacement.
+% Tendon displacement can be calculated by this angle.
+Pulses from the encoder are counted by an IC counter (NEC $\mu$PD 4702C).
 The finger is controlled by Arduino DUE.
-Arduino reads the values of the counter from digital input ports
-and sends out the commands for the motors by a Serial port.
+Arduino - a microcontroller board that reads the values of the counter from digital input ports
+and outputs the commands to the motors by a serial port.
 % 		フィンガには，腱を駆動するためのサーボモータと，腱の移動距離を測定するためのロータリエンコーダを，それぞれの腱に1個ずつ，計2個使用している．
 % 		また，ロータリエンコーダの出力パルスをカウントするカウンタICを，エンコーダ1つにつき，1つずつ用いている．
 % 		フィンガの制御に関する演算と，カウンタの読み取り，モータへの指令は，すべてマイコンボードのArduino DUEで行っている．
@@ -1374,17 +1383,23 @@ and sends out the commands for the motors by a Serial port.
 % 		 \end{tabular}
 % 		\end{table}
 
-Tensile force $\bm{f}$ and tendon displacement velocity $\dot{\bm{l}}$ are controlled by winding tendon wire by the base pulley.
-Base pulleys are not directly connected to servo motors, but driven by linear-torsion springs which are placed between servo motors and base pulleys.
-Torque exerted by the spring can be calculated by subtracting displacement of the base pulley from that of spring;
-therefore, for controlling the tensile force of a tendon, we have to control the spring displacement.
-We adopted springs whose spring constant is 5.17N/mm.
+The tensile force $\bm{f}$ and tendon displacement velocity $\dot{\bm{l}}$ are controlled by a winding tendon wire by the base pulley.
+The base pulleys are not directly connected to the servo motors, but are driven by linear-torsion springs placed between the servo motors and base pulleys.
+The torque exerted by the spring
+is calculated from
+% can be calculated by subtracting 
+the displacement difference between the base pulley and the spring;
+therefore, to control the tensile force on the tendon, we must control the spring displacement.
+The spiring constant of the selected springs is
+% We adopted springs whose spring constant is 
+5.17N/mm.
 % 		腱駆動のフィンガは，腱の巻き取り量を調整することで，腱張力や腱の移動速度を制御する．
 % 		開発したフィンガにおいては，腱に発生する張力を制御するため，腱をモータで直接巻き取るのではなく，ねじりばねを用いることで，力を伝達している．
 % 		具体的には，腱を駆動するプーリと，モータの間にねじりばねをはさみ（図\ref{fig:spring}），モータを位置制御することでプーリに発生するトルクを制御する．
 % 		ばねに発生しているトルクは，プーリとモータの位置から求まるばねの変位によって計算することができ，このトルクが目標トルクに達するように制御を行う．
 % 		今回使用したばねは，ばね定数5.17[N mm/deg]，許容変位値30[deg]である．
-A rotary encoder which measures angle of base pulley is directly connected to a shaft of the pulley.
+The displacement angle of base pulley is measured by a rotary encoder directly connected to the shaft of the pully.
+% A rotary encoder which measures angle of base pulley is directly connected to a shaft of the pulley.
 % 		ロータリエンコーダの取り付けは，簡単のため，駆動軸と直結することにした（図\ref{fig:spring2}）．
 % 		開発したフィンガでは，駆動軸が高速に回転することはなく，ラジアル方向，スラスト方向ともに，軸に大きな力がかかることはないと判断した．
 
@@ -1396,7 +1411,7 @@ A rotary encoder which measures angle of base pulley is directly connected to a 
 % 		 \label{fig:spring}
 % 		\end{figure}
 
-Angular position and fingertip force can be controlled unless the tendons do not slack.
+The angular position and fingertip force can be controlled while the tendons do not slacken.
 % Fig. \ref{fig:control} shows a position controller for the each motor.
 % % 		フィンガは，分岐腱に緩みがないとき，位置制御，もしくは指先に発生する力の制御を行える．
 % % 		位置制御するときは，図\ref{fig:control}に示すように制御を行う．
@@ -1406,23 +1421,27 @@ Angular position and fingertip force can be controlled unless the tendons do not
 % 		\caption{PID contoller for each motor. D denotes differentiator and S denotes integrator}
 % 		\label{fig:control}
 % 	\end{figure}
-The control is discrete system and micro computer on Arduino repeats the chain of calculation.
+The control is discretized, and the calculation algorithm is iterated by the micro-computer installed on Arduino.
+ % repeats the chain of calculation.
 % In figure, D reveals differentiator and S is integrator.
 % 		この制御は，離散システムであり，マイコンでこの一連の計算を繰り返し行っている．
 % 		図中の$D$は微分器を，$\Sigma$は積分器を表す．
-The angular position control uses PID which calculates the desired spring torque from an position error of a joint.
-And current torque of spring is fed back to target torque.
-In addition, bias force is added tendon tensile force realizing target torque.
-Restricting finger movement on horizontal plane, gravity compensation is not included in the system.
+The angular position control uses a PID, which calculates the desired spring torque from the position error of a joint.
+The current torque of the spring is fed back to the target torque.
+% In addition, 
+To realize the target torque, a bias force is added to the tendon tensile force.
+Because the finger movement is restricted to the horizontal plane, gravity compensation is not included in the system.
 % 		位置制御は，目標値とのずれに対してPID制御を行っている．
 % 		また，PID制御の結果の目標トルクに対して，実際に駆動軸に発生しているトルクとのずれをフィードバックしている．
 % 		フィンガは，水平面内で動作することとし，重力補償は行っていない．
-When not needing position control, finger can move with only feedback control of spring torque, giving the value of joint torque which exerts target fingertip forces.
+When not needing position control, the finger can move sorely by the feedback control of the spring torque.
+The resulting joint torque exerts target forces on the fingertip.
+% giving the value of joint torque which exerts target fingertip forces.
 % 		物体に接触させて，力をかけるときなど，位置制御を行わないときは，指先に出したい力を発生させる関節トルクを指令値として与え，関節トルクのフィードバックのみで制御を行う．
 
 % bias forceについて説明あった方がいいかも？
 
-Fig. \ref{fig:angle_tracking} shows tracking performance of the developed system.
+Fig. \ref{fig:angle_tracking} plots the tracking performance of the developed system.
 % 		以上のようなシステムでフィンガを動作させる．
 % 		実際に，関節1の角度が0度の位置から40度の位置まで位置制御を行ったときの，目標角度値に対する，腱の変位から計算される関節1の角度のグラフを図\ref{fig:angle_tracking}に示す．
 % 		また，関節1の角度が0度の位置から40度の位置まで位置制御を行ったときの，フィンガの動きを図\ref{pic:angle_tracking}に示す．
@@ -1431,7 +1450,7 @@ Fig. \ref{fig:angle_tracking} shows tracking performance of the developed system
 	\includegraphics[width=.70\textwidth]{./figure/plot/0208_3_0-20.pdf}
 	% \subfigure[0度から40度への移動\label{fig:angle}]{\includegraphics*[width=.90\textwidth]{./figure/plot/0208_3_0-20.pdf}}\\
 	% \subfigure[40度から20度への移動\label{fig:angle2}]{\includegraphics*[width=.90\textwidth]{./figure/plot/0208_4_20-10.pdf}}\\
-	\caption{Time response of joint angle 1 when the target is a ramp input. Desired angle changes from 0 to 40 degrees in about 8[s].It has certain time delay.}
+	\caption{Time response of joint angle 1 when the target is a ramp input. Desired angle changes from $0^{\circ}$-$40^{\circ}$ in approximately 8 s. Note the small time delay.}
 	\label{fig:angle_tracking}
 \end{figure}
 % 		\begin{figure}[tbh]
@@ -1454,12 +1473,18 @@ Fig. \ref{fig:angle_tracking} shows tracking performance of the developed system
 % 		  $K_f$ & 0.1\\ \hline
 % 		 \end{tabular}
 % 		\end{table}
-We can see delay of initial response in the graph.
-This may be caused by rotational friction of joints on not the shaft but the surface of finger frame.
+% We can see delay of i
+The initial response is delayed, possibely becasue
+% This may be caused by 
+rotational friction
+% of joints on not the shaft but
+is exerted on the surface of the finger frame.
 % Though shafts of joints have ball bearing, 
 % not shaft but 
-In this time, we didn't sufficiently configure each gain constant because position control is not main focus in this research.
-If we had to improve responsibility, we can configure gain.
+At this stage, the gain constants are not optimally configured because position control is not the main focus of our research.
+% In this time, we didn't sufficiently configure each gain constant because position control is not main focus in this research.
+The gains could be reconfigured in an improved design.
+% If we had to improve responsibility, we can configure gain.
 % 		グラフからは，フィンガの初動が遅れていることが読み取れる．
 % 		これは，関節の回転方向に生じる摩擦力が大きいためだと考えられる．
 % 		フィンガの関節には，ボールベアリングが入っており回転軸における摩擦は十分に小さい．
