@@ -52,6 +52,11 @@ Shirafuji, S., Ikemoto, S., Hosoda, K.:
   robotic hand.
 \newblock The International Journal of Robotics Research (2014) in press.
 
+\bibitem{Sawada2012}
+Sawada, D., Ozawa, R.:
+\newblock Joint control of tendon-driven mechanisms with branching tendons.
+\newblock In: Proc. IEEE Int. Conf. Robot. Autom. (May 2012)  1501--1507
+
 \bibitem{kobayashi1998}
 Kobayashi, H., Hyodo, K., Ogane, D.:
 \newblock On tendon-driven robotic mechanisms with redundant tendons.
@@ -67,11 +72,6 @@ Murray, R., Li, Z., Sastry, S.S.:
 Tsai, L.:
 \newblock Robot analysis: the mechanics of serial and parallel manipulators.
 \newblock Wiley, New York (1999)
-
-\bibitem{sawada2012}
-Sawada, D., Ozawa, R.:
-\newblock Joint control of tendon-driven mechanisms with branching tendons.
-\newblock In: Proc. IEEE Int. Conf. Robot. Autom. (May 2012)  1501--1507
 
 \bibitem{Leijnse1995}
 Leijnse, J., Kalker, J.:

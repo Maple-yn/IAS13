@@ -1,10 +1,10 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013) (format=platex 2013.9.18)  1 MAR 2014 03:05
+This is e-upTeX, Version 3.1415926-p3.4-u1.11-110825-2.6 (utf8.uptex) (TeX Live 2013) (format=uplatex 2013.9.18)  13 MAY 2014 16:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
-pLaTeX2e <2006/11/10> (based on LaTeX2e <2011/06/27> patch level 0)
+pLaTeX2e <2011/05/07u00>+0 (based on LaTeX2e <2011/06/27> patch level 0)
 Babel <3.9f> and hyphenation patterns for 78 languages loaded.
 (./llncs.cls
 Document Class: llncs 2013/09/27 v2.18 
@@ -13,6 +13,10 @@ Document Class: llncs 2013/09/27 v2.18
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 9.6222pt on input line 64.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 9.6222pt on input line 64.
 )
 \c@part=\count81
 \c@section=\count82
@@ -258,23 +262,61 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 14.
+LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 14.
+LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 20.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 20.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 22.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 22.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 162.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 162.
- [1
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 13.85594pt on input line 20.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 13.85594pt on input line 20.
+LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
+(Font)              scaled to size 13.85594pt on input line 20.
+LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 13.85594pt on input line 20.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 6.73553pt on input line 20.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 6.73553pt on input line 20.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 8.65997pt on input line 20.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 8.65997pt on input line 20.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 5.77332pt on input line 20.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 5.77332pt on input line 20.
+LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <9> not available
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 22.
+LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
+(Font)              scaled to size 8.65997pt on input line 22.
+LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <9> not available
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 22.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 8.65997pt on input line 22.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 11.54663pt on input line 161.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 11.54663pt on input line 161.
+LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 161.
+LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
+(Font)              scaled to size 11.54663pt on input line 161.
+LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 161.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 11.54663pt on input line 161.
+
+Overfull \hbox (0.10379pt too wide) in paragraph at lines 163--209
+\OT1/cmr/m/n/10 Utah/MIT Hand[2]\JY2/mc/m/n/10 ， \OT1/cmr/m/n/10 and DLR-Hand
+[3] are all em-ploy-ing the tendon-driven mech-
+ []
+
+[1
 
 ]
 File: fig/coupled.eps Graphic file (type eps)
@@ -284,18 +326,21 @@ File: fig/slacked.eps Graphic file (type eps)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
-[5] [6]
+[5]
 File: fig/slack1.eps Graphic file (type eps)
  <fig/slack1.eps>
 File: fig/slack2.eps Graphic file (type eps)
- <fig/slack2.eps>
+ <fig/slack2.eps> [6]
 File: fig/force.eps Graphic file (type eps)
- <fig/force.eps> [7]
+ <fig/force.eps>
 File: ./figure/JPG/finger1.eps Graphic file (type eps)
 
-<./figure/JPG/finger1.eps> [8]
+<./figure/JPG/finger1.eps> [7]
 File: ./figure/plot/0208_3_0-20.pdf Graphic file (type pdf)
  <./figure/plot/0208_3_0-20.pdf>
+Underfull \vbox (badness 5771) has occurred while \output is active []
+
+ [8]
 File: ./figure/plot/threshold_angle.pdf Graphic file (type pdf)
 
 <./figure/plot/threshold_angle.pdf>
@@ -308,18 +353,15 @@ File: ./pdf/2425t15r80b450shadow.pdf Graphic file (type pdf)
  <./pdf/2425t15r80b450shadow.pdf>
 File: ./figure/frame1733r60b180.pdf Graphic file (type pdf)
 
-<./figure/frame1733r60b180.pdf> [10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11]
-(./main.bbl [12]) [13] (./main.aux) ) 
+<./figure/frame1733r60b180.pdf> [10] [11] (./main.bbl [12]) [13] (./main.aux) )
+ 
 Here is how much of TeX's memory you used:
- 1917 strings out of 494004
- 22889 string characters out of 6154418
- 101946 words of memory out of 5000000
- 5345 multiletter control sequences out of 15000+600000
- 18381 words of font info for 70 fonts, out of 8000000 for 9000
+ 1911 strings out of 493997
+ 22869 string characters out of 6154387
+ 101968 words of memory out of 5000000
+ 5352 multiletter control sequences out of 15000+600000
+ 15872 words of font info for 70 fonts, out of 8000000 for 9000
  745 hyphenation exceptions out of 8191
- 28i,20n,24p,311b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,20n,24p,328b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (13 pages, 44332 bytes).
+Output written on main.dvi (13 pages, 43844 bytes).

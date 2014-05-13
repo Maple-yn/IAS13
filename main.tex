@@ -424,19 +424,27 @@ where $r_{ij}$ is the moment arm between each tendon and joint (the subscript in
 Note that the positive direction of rotation is counterclockwise in the figure,
 whereas the positive tendon displacement is the pulling direction.
 % and positive displacement of the tendon is in a pulling direction.
+% So that any desired torque may be applied to each joint,
+% the tendon control must depend on the elements of $\vect{P}$\cite{kobayashi1998}.
+% We assume that $\vect{P}$ satisfies the condition of tendon controllability.
 In order to apply any desired torque to each joint, the system has to be tendon controllable depending on elements of the matrix $\vect{P}$\cite{kobayashi1998}.
 We assume that $\vect{P}$ is satisfied the condition to be tendon controllable.
 
-We consider the kinematics in the case that the manipulator has a branching tendon as Fig. \ref{branching_model} based on the expression described above.
-The branching tendon is sometimes used to realize the underactuated manipulator\cite{Birglen2008}.
-Sawada and Ozawa\cite{sawada2012} proposed a generalized control method for tendon-driven mechanism with branching tendons.
-Shirafuji et al.\cite{Shirafuji2014b} has been proposed that the tendon-driven manipulator with branching tendons can be controlled as a manipulator with less DoFs than original DoFs virtually under the assumption that the branching tendon has no elasticity.
-It is caused by the geometric constraint of the branching tendon which generate coordinated motion of the joints. 
-In addition, they implied that the system can be released arbitrarily from this coupled motion by adjusting the bias tensile force.
-We apply the method proposed by Shirafuji et al.\cite{Shirafuji2014b} to the proposed robotic finger, and derive the condition to keep the coupled motion.
+We consider that the manipulator has a branching tendon, as shown in Fig. \ref{branching_model}
+and discussed above, and investigate the kinematics.
+% We consider the kinematics in the case that the manipulator has a branching tendon as Fig. \ref{branching_model} based on the expression described above.
+The branching tendon has been sometimes adopted in underactuated manipulators\cite{Birglen2008}.
+% The branching tendon is sometimes used to realize the underactuated manipulator\cite{Birglen2008}.
+Sawada and Ozawa\cite{Sawada2012} proposed a generalized control method for a tendon-driven mechanism with branching tendons.
+Shirafuji et al.\cite{Shirafuji2014b} suggested
+% has been proposed 
+that the tendon-driven manipulator with branching tendons can be controlled with fewer DoFs than with the original number of DoFs virtually under the assumption that the branching tendon has no elasticity.
+This reduction in DoFs is caused by the geometric constraint of the branching tendon that generates coordinated joint motions.
+In addition, Shirafuji et al. implied that the system can be arbitrarily released from this coupled motion by adjusting the bias tensile force.
+Here, we apply Shirafuji et al.'s approach\cite{Shirafuji2014b} to our proposed robotic finger, and derive the conditions under which coupled motion is retained.
 
-Shirafuji et al.\cite{Shirafuji2014b} use a virtual tendon Jacobian matrix $\vect{P}_v$ to represent the relation between tendons include branching tendons and coupled joints.
-First, we derive this matrix of the proposed robotic finger.
+Shirafuji et al.\cite{Shirafuji2014b} use a virtual tendon Jacobian matrix $\vect{P}_v$ to represent the relationships between tendons including branched tendons and coupled joints.
+First, we derive this matrix for the proposed robotic finger.
 Equation (\ref{jaco_relation}) can be divided as follows:
 \begin{align}
 	\dot{l}_{1}&=\vect{P}_{1}
@@ -453,7 +461,7 @@ Equation (\ref{jaco_relation}) can be divided as follows:
 						\dot{\theta}_{2}
 							\end{bmatrix},		\label{subjacobian1}
 \end{align}
-where $\vect{P}_{1}$ and $\vect{P}_{2}$ are the corresponding submatrices given as:
+where $\vect{P}_{1}$ and $\vect{P}_{2}$ are the corresponding submatrices, given as:
 \begin{align}
 	\vect{P}_{1}=
 			\begin{bmatrix}
@@ -466,7 +474,8 @@ where $\vect{P}_{1}$ and $\vect{P}_{2}$ are the corresponding submatrices given 
 				r_{2a1}&0
 			\end{bmatrix}.			\label{subjacobian_value}
 \end{align}
-If there is no slacked tendon, the tendon displacement velocities of two tendons branched from tendon 1 has to be same because they are connected at the same point.
+If neither tendon is slackened, the tendon displacement velocities of both tendons branched from tendon 1 has to be the same
+because they are connected at the same point.
 Therefore, $\dot{l}_{2a}=\dot{l}_{2b}=\dot{l}_{2}$ and (\ref{subjacobian1}) can be rewritten as:
 \begin{align}
 	\dot{l}_{2}
@@ -480,7 +489,7 @@ Therefore, $\dot{l}_{2a}=\dot{l}_{2b}=\dot{l}_{2}$ and (\ref{subjacobian1}) can 
 						\dot{\theta}_{2}
 							\end{bmatrix}.
 \end{align}
-The joint angler velocity is derived using the inverse of $\vect{P}_{1}$ as:
+The joint angler velocity is derived using the inverse of $\vect{P}_{1}$ as follows:
 \begin{align}
 		\begin{bmatrix}
 	\dot{\theta}_{1}\\
@@ -498,13 +507,17 @@ The joint angler velocity is derived using the inverse of $\vect{P}_{1}$ as:
 									\end{bmatrix}.
 \label{theta}
 \end{align}
-During the coupled motion under the assuming there is no slack, it can be seen that the relation between each joint angular velocity is described as:
+During completely taut coupled motion, the angular velocities of each joint are related as follows:
+% it can be seen that the relation between each joint angular velocity is described as:
 \begin{align}
 	\dot{\theta}_{1}:\dot{\theta}_{2}=1:\frac{r_{2a1}-r_{2b1}}{r_{2b2}}.
 \end{align}
-The condition not to cause slackness to tendons will hereinafter be described in detail.
-We define a virtual angle $\theta_v$ to represent the angle of coupled joints as $\dot{\theta}_v=\dot{l}_2$.
-Substituting (\ref{theta}) into (\ref{jaco_relation}), we obtain the follows:
+Next, we now detail the condition under which the tendons remain taut,
+and define a virtual angle $\theta_v$ that represents the angle of the coupled joints:
+% The condition not to cause slackness to tendons will hereinafter be described in detail.
+% We define a virtual angle $\theta_v$ to represent the angle of coupled joints as 
+$\dot{\theta}_v=\dot{l}_2$.
+Substituting (\ref{theta}) into (\ref{jaco_relation}), we obtain
 \begin{align}
 	\begin{bmatrix}
 		\dot{l}_{1}\\
@@ -533,7 +546,7 @@ Substituting (\ref{theta}) into (\ref{jaco_relation}), we obtain the follows:
 								\end{bmatrix}
 										\dot{\theta}_v.			\label{new_jaco_relation}
 \end{align}
-From the fact that $\dot{l}_{2a}=\dot{l}_{2b}=\dot{l}_{2}$ when there is no slack, (\ref{new_jaco_relation}) can be rewritten as:
+Since $\dot{l}_{2a}=\dot{l}_{2b}=\dot{l}_{2}$ in the absence of slack, (\ref{new_jaco_relation}) can be rewritten as follows:
 \begin{align}
 	\begin{bmatrix}
 		\dot{l}_{1}\\
@@ -548,10 +561,13 @@ From the fact that $\dot{l}_{2a}=\dot{l}_{2b}=\dot{l}_{2}$ when there is no slac
 												\\
 	1
 	\end{bmatrix}
-			\dot{\theta}_v.
+			\dot{\theta}_v.	\label{eq:l_theta_v}
 \end{align}
-This align can be regarded as the relation between the joint angular velocities and the tendon displacement velocity of the tendon-driven manipulator with one-DoF and two tendons.
-In this case, the tendon Jacobian matrix of the system is described as:
+Equation (\ref{eq:l_theta_v}) relates
+% This align can be regarded as the relation between 
+the joint angular velocities to the tendon displacement velocity of the tendon-driven manipulator with one-DoF and two tendons.
+In this case, the tendon Jacobian matrix of the system is
+% described as:
 \begin{align}
 	\vect{P}_{v}=
 	\begin{bmatrix}
@@ -566,7 +582,7 @@ In this case, the tendon Jacobian matrix of the system is described as:
 \end{align}
 and we call $\vect{P}_{v}$ as virtual tendon Jacobian matrix.
 Second, we apply this matrix to (\ref{force_relation}).
-Multiplying both sides of (\ref{force_relation}) by $(\vect{P}_{2}^{-1}[1\ 1]^{T})^{T}$, we obtain the follows:
+Multiplying both sides of (\ref{force_relation}) by $(\vect{P}_{2}^{-1}[1\ 1]^{T})^{T}$, we obtain:
 \begin{align}
 	\begin{bmatrix}
 		1&1
@@ -581,8 +597,8 @@ Multiplying both sides of (\ref{force_relation}) by $(\vect{P}_{2}^{-1}[1\ 1]^{T
 		f_{2a}+f_{2b}
 	\end{bmatrix},
 \end{align}
-where $f_{i}$ is each tensile force and $f_{2a}+f_{2b}$ is equivalent to the tensile force of the branching tendon $f_{2}$.
-Furthermore, defining virtual torque vector as:
+where $f_{i}$ denotes the tensile forces and $f_{2a}+f_{2b}$ is equivalent to the tensile force of the branching tendon $f_{2}$.
+Furthermore, defining the virtual torque vector by
 \begin{align}
 	\tau_{v}=
 	\begin{bmatrix}
@@ -590,20 +606,28 @@ Furthermore, defining virtual torque vector as:
 	\end{bmatrix}
 	\vect{P}_{2}^{-T}\vect{\tau},
 \end{align}
-we can control the proposed robotic finger regarding as the tendon-driven manipulator with one-DoF and two tendons virtually under the assuming that there is no slack of tendon.
+we can control the proposed robotic finger regarding as a tendon-driven manipulator with one-DoF and two tendons virtually under the assuming that there is no slack of the tendons.
 
-We assumed that there is no slack of tendon in the above discussion, but the coupled motion is lost when one of the divided tendons is slack.
-This slack is caused by forces applied to the robotic finger, include external force generated by the contact with the environment and inertial force during its motion.
-The proposed robotic finger has a branching tendon, and there are two states of tendons when slackness is occurred as shown Fig. \ref{slacked_tendons}.
-These states can be used when we wish to control the robotic finger without the coupled motion of joints (e.g. we wish to manipulate the grasped object using with the end link of the robotic finger).
-Finally, therefore, we derive the condition that one of the tendons divided from the branching tendon become slack when torques are applied to the joints as a result of the external force applied to the fingertip as shown in Fig. \ref{external_force}.
-We consider the planar motion, and given the external force vector $\vect{F}$ which is applied to the tip of robotic finger, the relation between the external force and joint torques can be represented as:
+On the other hand, the coupled motion is lost when one of the divided tendons becomes slack.
+% We assumed that there is no slack of tendon in the above discussion, but the coupled motion is lost when one of the divided tendons is slack.
+Slackening is induced by the forces applied to the robotic finger, 
+including the external forces generated by contact with the einvironment and inertial forces during finger motion.
+% This slack is caused by forces applied to the robotic finger, include external force generated by the contact with the environment and inertial force during its motion.
+The proposed robotic finger has a branching tendon, and slackness permits two states of tendons, as shown Fig. \ref{slacked_tendons}.
+These states can be used for controlling the robotic finger without coupled joint motions (for instance, when the finger manipulates a grasped object using its end link).
+Therefore, we finally derive a condition that one of the tendons divided from the branching tendon slackens
+when an external force applied to the fingertip supplies torque to the joints.
+This situation is shown in Fig. \ref{external_force}
+% Finally, therefore, we derive the condition that one of the tendons divided from the branching tendon become slack when torques are applied to the joints as a result of the external force applied to the fingertip as shown in Fig. \ref{external_force}.
+Considering a planar motion, and given the external force applied to the robotic fingertip by the vector $\vect{F}$,
+the joint torques are related to the external force as
+% the relation between the external force and joint torques can be represented as:
 \begin{align}
 	\vect{\tau}=\vect{J}^{T}\vect{F},
 \label{standard_jacobian}
 \end{align}
-where $\vect{J}$ is a Jacobian matrix representing the relation between velocity of the contact point in each direction and each joint angular velocity.
-Assuming the frictionless point contact, the external force vector can be described as $\vect{F}=[0\ F]^{T}$, and (\ref{standard_jacobian}) can be written as:
+where $\vect{J}$ is a Jacobian matrix relating the velocity of the contact point in each direction to each joint angular velocity.
+Assuming frictionless point contact, the external force vector can be described as $\vect{F}=[0\ F]^{T}$, and (\ref{standard_jacobian}) can be written as:
 \begin{align}
 	\vect{\tau}=
 		\begin{bmatrix}
@@ -613,8 +637,9 @@ Assuming the frictionless point contact, the external force vector can be descri
 \label{tau}
 \end{align}
 where $L_{1}$ is the length of the link between the joints and $L_{2}$ is the distance between the contact point and joint 2.
-The slack of each tendon is occurred when its tensile force becomes negative because a tendon can not exert a pushing force.
-Therefore, substituting (\ref{tau}) into (\ref{tensile_force}), we obtain the follows:
+Because tendons exert no pushing motion, they slacken when their tensile force becomes negative.
+% The slack of each tendon is occurred when its tensile force becomes negative because a tendon can not exert a pushing force.
+Therefore, substituting (\ref{tau}) into (\ref{tensile_force}), we obtain
 \begin{align}
 	\begin{bmatrix}
 	f_{1}\\
@@ -628,9 +653,15 @@ Therefore, substituting (\ref{tau}) into (\ref{tensile_force}), we obtain the fo
 		\end{bmatrix}
 	F+\vect{f}_{b},	\label{eq:f-tau-pinv}
 \end{align}
-where we regard the branching tendon as independent tendons as shown Fig. \ref{external_force}.
-When one of $f_{2b}$ and $f_{2a}$ become negative for given the external force $F$ and the bias force vector $\vect{f_{b}}$, the state of tendons change to the state such as Fig. \ref{slacked_tendons}, and this is the condition to nullify the coupled motion.
-We use these derived relations in this section to develop the robotic finger and validate the state transition of the tendons caused by the slack of tendon in the following section.
+where the branching tendon is considered as two independent tendons (see Fig. \ref{external_force}).
+% where we regard the branching tendon as independent tendons as shown Fig. \ref{external_force}.
+When either $f_{2b}$ or $f_{2a}$ becomes negative under the external force $F$ and the bias force vector $\vect{f_b}$,
+the corresponding tendon becomes slack, as shown in Fig. \ref{slacked_tendons},
+and the coupled motion is annulled.
+% When one of $f_{2b}$ and $f_{2a}$ become negative for given the external force $F$ and the bias force vector $\vect{f_{b}}$, the state of tendons change to the state such as Fig. \ref{slacked_tendons}, and this is the condition to nullify the coupled motion.
+Using the relationships derived in this section, we develop the robotic finger in the next section.
+We also validate the state transition of the tendons caused by the slack of tendon in the following section.
+% We use these derived relations in this section to develop the robotic finger and validate the state transition of the tendons caused by the slack of tendon in the following section.
 
 \begin{figure}[t]
 	\centering
@@ -639,14 +670,14 @@ We use these derived relations in this section to develop the robotic finger and
 	% \hspace{20mm}
 	\subfigure[]{
 	\includegraphics[width=50mm]{fig/slack2.eps}}
-	\caption{States of the tendons when one of them is slack. The slacked tendon is illustrated as a dotted line. (a) The state when tendon 2a is slack. (b)  The state when tendon 2b is slack.}
+	\caption{States of the tendons when one tendon is slack. The slackened tendon is indicated by the dotted line. (a) The state when tendon 2a is slack. (b)  The state when tendon 2b is slack.}
 	\label{slacked_tendons}
 \end{figure}
 
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=80mm]{fig/force.eps}
-	\caption{Model of the equilibrium of force resulting from a contact with the environment.}
+	\caption{Model of force equilibrium resulting from a contact with the environment.}
 	\label{external_force}
 \end{figure}
 
@@ -1222,7 +1253,7 @@ The finger is a simple model of a human finger, driven by branching extensor ten
 % 		モーメントアームの設定は，Leijnse et al.\cite{Leijnse1995}，Spoor\cite{Spoor1983}の示したヒトの指におけるモーメントアームを参考にして行った．
 % 		実際に採用した値を，表\ref{tab:pulley}に示す．
 % Table \ref{tab:pulley} shows the actual moment arms for the robotic finger, taking the real parameters into account\cite{Leijnse1995,Spoor1983}.
-Based on real parameters\cite{Leijnse1995,Spoor1993}, the moment arms for the robotic finger were decided as follows:
+Based on real parameters\cite{Leijnse1995,Spoor1983}, the moment arms for the robotic finger were decided as follows:
  % The actual moment arms for the rovotic finger are decided as follows: 
  $r_{11}=7$, $r_{12}=4$, $r_{2b1}=3$, $r_{2b2}=4$, $r_{2a}=5$(units are mm).
 % taking the real parameters into account\cite{Leijnse1995,Spoor1983}.

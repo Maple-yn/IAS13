@@ -1,11 +1,11 @@
-This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2013)
+This is upBibTeX, Version 0.99d-j0.33-u1.11 (utf8.uptex) (TeX Live 2013)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: splncs.bst.bst
 Database file #1: reference_shirafuji.bib
 You've used 15 entries,
             2087 wiz_defined-function locations,
-            596 strings with 6117 characters,
+            597 strings with 6127 characters,
 and the built_in function-call counts, 5004 in all, are:
 = -- 519
 > -- 160
